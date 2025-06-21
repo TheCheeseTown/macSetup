@@ -1,31 +1,70 @@
 # Setup of mac
 
+Getting started with the automated install
+`cd ~ && git clone git@github.com:TheCheeseTown/macSetup.git && cd macSetup && ./install`
+
 
 ## HOMEBREW
 
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
+Installs Alacritty and VSCode through brew install --cask
 
-### Packages
+Installs these with homebrew
+neovim
+tmux
+git
+tree-sitter
+lazygit
+python@3
+iperf
+gcc
+font-jetbrains-mono-nerd-font
+mas
 
-Darktable
-````sh
-brew install --cask darktable
-```
+## MACOS 
+Runs macos.sh to setup the os
 
-Alacritty
-```sh
-brew install --cask alacritty
-```
-Tmux
-```sh
-brew install tmux
-```
-Nvim
-```sh
-brew install nvim
-```
+## AstroNvim
+Installs Astronvim from the official config
+
+## Alacritty
+Installs my alacritty config
+
+## MacOS Applications
+Using mas I just install one macos app from App Store
+Magnet : 441258766s
+
+## Removing and adding dock apps
+Using ```brew install dockutil```
+
+Removing:
+- TV
+- Podcasts
+- Safari
+- Mail
+- FaceTime
+- Messages
+- Maps
+- Photos
+- Contacts
+- Calendar
+- Reminder
+- Notes
+- Music
+- News
+- App Store
+- Pages
+- Numbers
+- Keynote
+
+Adding:
+- Mail
+- Freeform
+- Music
+- Alacritty
+- Visual Studio Code
 
 
 
