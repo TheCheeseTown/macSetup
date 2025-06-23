@@ -16,7 +16,7 @@ printf 'Do you want to change macos behaviour? (y/n)? '
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     printf "Setting up macos\n"
-    source macos.sh
+    source macos.sh --no-restart
 fi
 
 
