@@ -66,6 +66,7 @@ printf 'Do you want to install AstroNVIM config for neovim? (y/n)? '
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
 printf "Installing astro NVIM\n"
+
 git clone --depth 1 https://github.com/AstroNvim/template ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 fi
@@ -81,7 +82,7 @@ fi
 printf 'Do you want to install alacritty config? (y/n)? '
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    printf "Installing Alactritty config file" 
+    printf "Installing Alactritty config file\n" 
     cp alacritty.toml ~/.alacritty.toml
 fi
 
